@@ -1,5 +1,8 @@
+from cgitb import text
 from tkinter import *
 from tkinter import ttk
+from tkinter import font
+from tkinter.tix import TEXT
 
 #importando Pillow
 from PIL import Image, ImageTk
@@ -85,6 +88,59 @@ pok_hb1.place(x=195, y=360)
 #Ataque
 pok_hb2 = Label(janela, text='Soco Eletrico', relief= 'flat', anchor=CENTER, font=('Verdana 10'), bg=co1, fg=co4)
 pok_hb2.place(x=195, y=385)
+
+
+# Criando Botoes para Pokemon
+
+#Imagem Pokemon 1 Pikachu
+imagem_pokemon_1 = Image.open('images/cabeca-pikachu.png')
+imagem_pokemon_1 = imagem_pokemon_1.resize((40, 40))
+imagem_pokemon_1 = ImageTk.PhotoImage(imagem_pokemon_1)
+
+b_pok_1 = Button(janela, image=imagem_pokemon_1, text='Pikachu', width=150, relief= 'raised', overrelief=RIDGE, compound=LEFT, padx=5, anchor=NW, font=('Verdana 12'), bg=co1, fg=co0)
+b_pok_1.place(x=375, y=10)
+
+#Imagem Pokemon 2 Bulbasaur
+imagem_pokemon_2 = Image.open('images/cabeca-bulbasaur.png')
+imagem_pokemon_2 = imagem_pokemon_2.resize((40, 40))
+imagem_pokemon_2 = ImageTk.PhotoImage(imagem_pokemon_2)
+
+b_pok_1 = Button(janela, image=imagem_pokemon_2, text='Bulbasaur', width=150, relief= 'raised', overrelief=RIDGE, compound=LEFT, padx=5, anchor=NW, font=('Verdana 12'), bg=co1, fg=co0)
+b_pok_1.place(x=375, y=65)
+
+#Imagem Pokemon 3 Charmander
+imagem_pokemon_3 = Image.open('images/cabeca-charmander.png')
+imagem_pokemon_3 = imagem_pokemon_3.resize((40, 40))
+imagem_pokemon_3 = ImageTk.PhotoImage(imagem_pokemon_3)
+
+b_pok_1 = Button(janela, image=imagem_pokemon_3, text='Charmander', width=150, relief= 'raised', overrelief=RIDGE, compound=LEFT, padx=5, anchor=NW, font=('Verdana 12'), bg=co1, fg=co0)
+b_pok_1.place(x=375, y=120)
+
+#Imagem Pokemon 4 Gyarados
+imagem_pokemon_4 = Image.open('images/cabeca-gyarados.png')
+imagem_pokemon_4 = imagem_pokemon_4.resize((40, 40))
+imagem_pokemon_4 = ImageTk.PhotoImage(imagem_pokemon_4)
+
+b_pok_1 = Button(janela, image=imagem_pokemon_4, text='Gyarados', width=150, relief= 'raised', overrelief=RIDGE, compound=LEFT, padx=5, anchor=NW, font=('Verdana 12'), bg=co1, fg=co0)
+b_pok_1.place(x=375, y=175)
+
+#Imagem Pokemon 5 Gengar
+imagem_pokemon_5 = Image.open('images/cabeca-gengar.png')
+imagem_pokemon_5 = imagem_pokemon_5.resize((40, 40))
+imagem_pokemon_5 = ImageTk.PhotoImage(imagem_pokemon_5)
+
+b_pok_1 = Button(janela, image=imagem_pokemon_5, text='Gengar', width=150, relief= 'raised', overrelief=RIDGE, compound=LEFT, padx=5, anchor=NW, font=('Verdana 12'), bg=co1, fg=co0)
+b_pok_1.place(x=375, y=230)
+
+#Imagem Pokemon 6 Dragonoide
+imagem_pokemon_6 = Image.open('images/cabeca-dragonite.png')
+imagem_pokemon_6 = imagem_pokemon_6.resize((40, 40))
+imagem_pokemon_6 = ImageTk.PhotoImage(imagem_pokemon_6)
+
+b_pok_1 = Button(janela, image=imagem_pokemon_6, text='Dragonite', width=150, relief= 'raised', overrelief=RIDGE, compound=LEFT, padx=5, anchor=NW, font=('Verdana 12'), bg=co1, fg=co0)
+b_pok_1.place(x=375, y=285)
+
+
 
 
 janela.mainloop()
